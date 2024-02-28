@@ -1,0 +1,544 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Menu Principal FYLEC</title>
+    <link rel="stylesheet" href="CSS/menu_principal.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1 ,user-scalable=no">
+    <script src="https://kit.fontawesome.com/a53360878e.js" crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+    <header class="header-principal">
+        <a href="index.html"><img class="logo" src="images/FYLEC-blanco.png" alt="Logo"></a>
+        <ul class="menu">
+            <li><a href="HTML/ofertas.html"><i class="fa-solid fa-tags"></i> </a><span>Ofertas</span></li>
+            <li><a href="#" onclick="mostrarLogin()"><i class="fa-solid fa-user"></i> </a><span>Cuenta</span></li>
+            <li><a href="#" onclick="mostrarCarrito()" class="btn-carrito"><i
+                        class="fa-solid fa-bag-shopping"></i></a><span>Mi carrito</span></li>
+        </ul>
+        <i class="fa-solid fa-bars-staggered" onclick="toggleMenu()"></i>
+        <div class="menu-oculto" id="menu">
+            <ul>
+                <li><a href="HTML/ofertas.html"><i class="fa-solid fa-tags"></i> </a><span>Ofertas</span></li>
+            <li><a href="#" onclick="mostrarLogin()"><i class="fa-solid fa-user"></i> </a><span>Cuenta</span></li>
+            <li><a href="#" onclick="mostrarCarrito()" class="btn-carrito"><i
+                class="fa-solid fa-bag-shopping"></i></a><span>Mi carrito</span></li>
+            </ul>
+        </div>
+    </header>
+    <div class="seccion">
+        <ul>
+            <li><a href="HTML/categorias.html">
+                    <p> Construcción</p>
+                </a></li>
+            <li><a href="HTML/categorias.html">
+                    <p>Agro</p>
+                </a></li>
+            <li><a href="HTML/categorias.html">
+                    <p></i> Herramientas</p>
+                </a></li>
+            <li><a href="HTML/categorias.html">
+                    <p> Electricidad</p>
+                </a></li>
+            <li><a href="HTML/categorias.html">
+                    <p>Pinturas</p>
+                </a></li>
+            <li><a href="HTML/categorias.html">
+                    <p>Cocinas y hogar</p>
+                </a></li>
+            <li><a href="HTML/categorias.html">
+                    <p>Jardín</p>
+                </a></li>
+            <li><a href="HTML/categorias.html">
+                    <p>Limpieza</p>
+                </a></li>
+            <li><a href="HTML/categorias.html">
+                    <p>Control de plagas</p>
+                </a></li>
+            <li><a href="HTML/categorias.html">
+                    <p>Tuverias y pvc</p>
+                </a></li>
+            <li><a href="HTML/categorias.html">
+                    <p>Protección Personal</p>
+                </a></li>
+
+        </ul>
+    </div>
+
+    <!-- Carrito de compras -->
+    <div class="carrito-contenedor" id="carritoContenedor">
+        <h2 class="carrito-titulo">Carrito de Compras</h2>
+        <div class="producto">
+            <img src="images/productos/-11.jpg" alt="Producto 1">
+            <div class="producto-detalles">
+                <p>Nombre del Producto 1</p>
+                <p>Precio: $20.00</p>
+            </div>
+            <input type="number" class="producto-cantidad" value="1" min="1">
+            <div class="producto-acciones">
+                <button onclick="eliminarProducto(1)">Eliminar</button>
+            </div>
+        </div>
+        <div class="producto">
+            <img src="images/productos/aspiradora-7.webp" alt="Producto 2">
+            <div class="producto-detalles">
+                <p>Nombre del Producto 2</p>
+                <p>Precio: $30.00</p>
+            </div>
+            <input type="number" class="producto-cantidad" value="2" min="1">
+            <div class="producto-acciones">
+                <button onclick="eliminarProducto(2)">Eliminar</button>
+            </div>
+        </div>
+        <!-- Agrega más productos según sea necesario -->
+
+    </div>
+
+    <div class="container-slider">
+        <div class="slider">
+            <div class="buscador">
+                <input type="text" placeholder="Buscar...">
+                <button type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
+            </div>
+            <img src="images/Slider1.jpg" class="slide active">
+            <img src="images/Slider2.png" class="slide">
+            <img src="images/Slider3.jpg" class="slide">
+        </div>
+    </div>
+    <p class="titulos"><i class="fa-solid fa-splotch"></i> Destacados</p>
+    <div class="container-1">
+        <div class="categorias-lista">
+            <ul>
+                <li><a href="HTML/categorias.html">
+                        <p><i class="fa-solid fa-person-digging"></i> Construcción</p>
+                    </a></li>
+                <li><a href="HTML/categorias.html">
+                        <p><i class="fa-solid fa-tractor"></i> Agro</p>
+                    </a></li>
+                <li><a href="HTML/categorias.html">
+                        <p><i class="fa-solid fa-screwdriver-wrench"></i> Herramientas</p>
+                    </a></li>
+                <li><a href="HTML/categorias.html">
+                        <p> <i class="fa-solid fa-lightbulb"></i> Electricidad</p>
+                    </a></li>
+                <li><a href="HTML/categorias.html">
+                        <p> <i class="fa-solid fa-paint-roller"></i> Pinturas</p>
+                    </a></li>
+                <li><a href="HTML/categorias.html">
+                        <p> <i class="fa-solid fa-house"></i> Cocinas y hogar</p>
+                    </a></li>
+                <li><a href="HTML/categorias.html">
+                        <p> <i class="fa-solid fa-seedling"></i> Jardín</p>
+                    </a></li>
+                <li><a href="HTML/categorias.html">
+                        <p> <i class="fa-solid fa-broom"></i> Limpieza</p>
+                    </a></li>
+                <li><a href="HTML/categorias.html">
+                        <p> <i class="fa-solid fa-skull-crossbones"></i> Control de plagas</p>
+                    </a></li>
+                <li><a href="HTML/categorias.html">
+                        <p> <i class="fa-solid fa-faucet-drip"></i> Tuverias y pvc</p>
+                    </a></li>
+                <li><a href="HTML/categorias.html">
+                        <p> <i class="fa-solid fa-mask-face"></i> Protección Personal</p>
+                    </a></li>
+            </ul>
+        </div>
+        <div class="container-cartas">
+            <div class="cards">
+                <div class="vendido">Mas vendidos</div>
+                <a href="HTML/producto.html"><img class="img-cards" src="images/productos/pistola-8.jpg" alt=""></a>
+                <div class="detalles">
+                    <span class="nombre">PISTOLA WAGNER PULVERIZADOR</span>
+                    <a href="HTML/producto.html" class="ver-todos"><br>
+                        <small>$288,322.20</small>
+                    </a>
+                </div>
+            </div>
+            <div class="cards">
+                <div class="vendido">Mas vendidos</div>
+                <a href="HTML/Categorias/construccion.html"><img class="img-cards" src="images/productos/-08.jpeg"
+                        alt=""></a>
+                <div class="detalles">
+                    <span class="nombre">Koraza Blanco</span>
+                    <a href="/HTML/Categorias/construccion.html" class="ver-todos"><br>
+                        <small>$112,900.00</small>
+                    </a>
+                </div>
+            </div>
+            <div class="cards">
+                <div class="vendido">Mas vendidos</div>
+                <a href="HTML/Categorias/construccion.html"><img class="img-cards" src="images/productos/-09.jpeg"
+                        alt=""></a>
+                <div class="detalles">
+                    <span class="nombre">CEMENTO HOLCIM 42.5 KG</span>
+                    <a href="/HTML/Categorias/construccion.html" class="ver-todos"><br>
+                        <s>$26,100.00</s>
+                        <small>$25,400.00</small>
+                    </a>
+                </div>
+            </div>
+            <div class="cards">
+                <div class="vendido">Mas vendidos</div>
+                <a href="HTML/Categorias/construccion.html"><img class="img-cards" src="images/productos/-10.jpg"
+                        alt=""></a>
+                <div class="detalles">
+                    <span class="nombre">TEJA TIPO S COLONIAL</span>
+                    <a href="/HTML/Categorias/construccion.html" class="ver-todos"><br>
+                        <small>$2,950.00</small>
+                    </a>
+                </div>
+            </div>
+            <div class="cards">
+                <div class="vendido">Mas vendidos</div>
+                <a href="HTML/Categorias/construccion.html"><img class="img-cards" src="images/productos/-11.jpg"
+                        alt=""></a>
+                <div class="detalles">
+                    <span class="nombre">CAMPANA KALA 76 V3 INOXIDABLE</span>
+                    <a href="/HTML/Categorias/construccion.html" class="ver-todos"><br>
+                        <small>$549,900.00</small>
+                    </a>
+                </div>
+            </div>
+            <div class="cards">
+                <div class="vendido">Mas vendidos</div>
+                <a href="HTML/Categorias/construccion.html"><img class="img-cards" src="images/Productos/Taladro-4.webp"
+                        alt=""></a>
+                <div class="detalles">
+                    <span class="nombre">Taladro Black+Decker</span>
+                    <a href="/HTML/Categorias/construccion.html" class="ver-todos"><br>
+                        <small>$235.900</small>
+                    </a>
+                </div>
+            </div>
+            <div class="cards">
+                <div class="vendido">Mas vendidos</div>
+                <a href="HTML/Categorias/construccion.html"><img class="img-cards" src="images/productos/-12.png"
+                        alt=""></a>
+                <div class="detalles">
+                    <span class="nombre">Camara Domo 2MP Lente 3.6</span>
+                    <a href="/HTML/Categorias/construccion.html" class="ver-todos"><br>
+                        <small>$60,170.00</small>
+                    </a>
+                </div>
+            </div>
+            <div class="cards">
+                <div class="vendido">Mas vendidos</div>
+                <a href="HTML/Categorias/construccion.html"><img class="img-cards" src="images/productos/-13.jpg"
+                        alt=""></a>
+                <div class="detalles">
+                    <span class="nombre">Exprimidor De Jugos 1 Litro</span>
+                    <a href="/HTML/Categorias/construccion.html" class="ver-todos"><br>
+                        <small>$56,048.93</small>
+                    </a>
+                </div>
+            </div>
+            <div class="cards">
+                <div class="vendido">Mas vendidos</div>
+                <a href="HTML/Categorias/construccion.html"><img class="img-cards" src="images/productos/-14.jpg"
+                        alt=""></a>
+                <div class="detalles">
+                    <span class="nombre">ANGULO (3/4 X 1/8) 19 MM X 2.5 MM</span>
+                    <a href="/HTML/Categorias/construccion.html" class="ver-todos"><br>
+                        <small>$235.900</small>
+                    </a>
+                </div>
+            </div>
+            <div class="cards">
+                <div class="vendido">Mas vendidos</div>
+                <a href="HTML/Categorias/construccion.html"><img class="img-cards" src="images/productos/-15.jpg"
+                        alt=""></a>
+                <div class="detalles">
+                    <span class="nombre">UTP Cat 5E Exterior Aleacion Rollo 305Mts</span>
+                    <a href="/HTML/Categorias/construccion.html" class="ver-todos"><br>
+                        <small>$168,400.00</small>
+                    </a>
+                </div>
+            </div>
+            <div class="cards">
+                <div class="vendido">Mas vendidos</div>
+                <a href="HTML/Categorias/construccion.html"><img class="img-cards" src="images/productos/-16.jpg"
+                        alt=""></a>
+                <div class="detalles">
+                    <span class="nombre">TANQUE PLÁSTICO NEGRO 1000 LTS</span>
+                    <a href="/HTML/Categorias/construccion.html" class="ver-todos"><br>
+                        <small>$394,680.00</small>
+                    </a>
+                </div>
+            </div>
+            <div class="cards">
+                <div class="vendido">Mas vendidos</div>
+                <a href="HTML/Categorias/construccion.html"><img class="img-cards" src="images/Productos/Taladro-4.webp"
+                        alt=""></a>
+                <div class="detalles">
+                    <span class="nombre">Taladro Black+Decker</span>
+                    <a href="/HTML/Categorias/construccion.html" class="ver-todos"><br>
+                        <small>$235.900</small>
+                    </a>
+                </div>
+            </div>
+            <div class="cards">
+                <div class="vendido">Mas vendidos</div>
+                <a href="HTML/Categorias/construccion.html"><img class="img-cards" src="images/productos/-17.jpg"
+                        alt=""></a>
+                <div class="detalles">
+                    <span class="nombre">BOQUILLA BICOLOR BLANCO 2 KG</span>
+                    <a href="/HTML/Categorias/construccion.html" class="ver-todos"><br>
+                        <small>$10,446.80</small>
+                    </a>
+                </div>
+            </div>
+            <div class="cards">
+                <div class="vendido">Mas vendidos</div>
+                <a href="HTML/Categorias/construccion.html"><img class="img-cards" src="images/productos/-18.png"
+                        alt=""></a>
+                <div class="detalles">
+                    <span class="nombre">ALICATE HOMBRE SOLO 10 PG 141012</span>
+                    <a href="/HTML/Categorias/construccion.html" class="ver-todos"><br>
+                        <small>$35,340.00</small>
+                    </a>
+                </div>
+            </div>
+            <div class="cards">
+                <div class="vendido">Mas vendidos</div>
+                <a href="HTML/Categorias/construccion.html"><img class="img-cards" src="images/productos/-19.jpg"
+                        alt=""></a>
+                <div class="detalles">
+                    <span class="nombre">CARETA SOLDADOR NEGRO FALCON FW440 FURIUS</span>
+                    <a href="/HTML/Categorias/construccion.html" class="ver-todos"><br>
+                        <small>$113,905.00</small>
+                    </a>
+                </div>
+            </div>
+            <div class="cards">
+                <div class="vendido">Mas vendidos</div>
+                <a href="HTML/Categorias/construccion.html"><img class="img-cards" src="images/productos/-20.jpg"
+                        alt=""></a>
+                <div class="detalles">
+                    <span class="nombre">COMPRESOR 25 LITROS 2.0 HP</span>
+                    <a href="/HTML/Categorias/construccion.html" class="ver-todos"><br>
+                        <small>$664,905.00</small>
+                    </a>
+                </div>
+            </div>
+            <div class="cards">
+                <div class="vendido">Mas vendidos</div>
+                <a href="HTML/Categorias/construccion.html"><img class="img-cards" src="images/productos/-21.jpg"
+                        alt=""></a>
+                <div class="detalles">
+                    <span class="nombre">HIDROLAVADORA H-4100 1400 W</span>
+                    <a href="/HTML/Categorias/construccion.html" class="ver-todos"><br>
+                        <small>$235.900</small>
+                    </a>
+                </div>
+            </div>
+            <div class="cards">
+                <div class="vendido">Mas vendidos</div>
+                <a href="HTML/Categorias/construccion.html"><img class="img-cards" src="images/Productos/Taladro-4.webp"
+                        alt=""></a>
+                <div class="detalles">
+                    <span class="nombre">Taladro Black+Decker</span>
+                    <a href="/HTML/Categorias/construccion.html" class="ver-todos"><br>
+                        <small>$235.900</small>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- contenedor de ofertas -->
+    <p class="titulos"><i class="fa-solid fa-splotch"></i> Ofertas</p>
+    <div class="contenido-ofertas">
+        <div class="cards">
+            <div class="vendido">Ofertas Hot</div>
+            <a href="HTML/producto.html"><img class="img-cards" src="images/productos/ofertas/-1.jpg" alt="">
+                <div class="precio"><small>$159,900.00</small></div>
+            </a>
+            <div class="detalles">
+                <span class="nombre">CABLE ELECTRICO AMARILLO #12 ROLLO 100 METROS 19 HILOS ANDES</span>
+                <a href="/HTML/Categorias/construccion.html" class="ver-todos"><br>
+                    <s>$168,608.00</s>
+                </a>
+            </div>
+        </div>
+        <div class="cards">
+            <div class="vendido">Ofertas Hot</div>
+            <a href="HTML/Categorias/construccion.html"><img class="img-cards" src="images/productos/ofertas/-2.png"
+                    alt="">
+                <div class="precio"><small>$159,900.00</small></div>
+            </a>
+            <div class="detalles">
+                <span class="nombre">CABLE ELECTRICO BLANCO #12 ROLLO 100 METROS 19 HILOS ANDES</span>
+                <a href="/HTML/Categorias/construccion.html" class="ver-todos"><br>
+                    <s>$168,608.00</s>
+                </a>
+            </div>
+        </div>
+        <div class="cards">
+            <div class="vendido">Ofertas Hot</div>
+            <a href="HTML/Categorias/construccion.html"><img class="img-cards" src="images/productos/ofertas/-3.jpg"
+                    alt="">
+                <div class="precio"><small>$36,800.00</small></div>
+            </a>
+            <div class="detalles">
+                <span class="nombre">LAMINA DRYWALL 1/2" DE 122 CM X 2.44 CM GYPLAC</span>
+                <a href="/HTML/Categorias/construccion.html" class="ver-todos"><br>
+                    <s>$41,800.00</s>
+                </a>
+            </div>
+        </div>
+        <div class="cards">
+            <div class="vendido">Ofertas Hot</div>
+            <a href="HTML/Categorias/construccion.html"><img class="img-cards" src="images/productos/ofertas/-4.jpeg"
+                    alt="">
+                <div class="precio"><small>$25,400.00</small></div>
+            </a>
+            <div class="detalles">
+                <span class="nombre">CEMENTO HOLCIM 42.5 KG EXCLUSIVO ONLINE</span>
+                <a href="/HTML/Categorias/construccion.html" class="ver-todos"><br>
+                    <s>$26,100.00</s>
+                </a>
+            </div>
+        </div>
+        <div class="cards">
+            <div class="vendido">Ofertas Hot</div>
+            <a href="HTML/Categorias/construccion.html"><img class="img-cards" src="images/productos/ofertas/-5.jpeg"
+                    alt="">
+                <div class="precio"><small>$604,900.00</small></div>
+            </a>
+            <div class="detalles">
+                <span class="nombre">METALDECK 2 PG X 12 MT X 0.94 ANCHO UTIL CAL 22 ACESCO</span>
+                <a href="/HTML/Categorias/construccion.html" class="ver-todos"><br>
+                    <s>$646,686.66</s>
+                </a>
+            </div>
+        </div>
+        <div class="cards">
+            <div class="vendido">Ofertas Hot</div>
+            <a href="HTML/Categorias/construccion.html"><img class="img-cards" src="images/productos/ofertas/-6.png"
+                    alt="">
+                <div class="precio"><small>$14,300.00
+                    </small></div>
+            </a>
+            <div class="detalles">
+                <span class="nombre">TABLETA 20 X 20 COLONIAL LISA ROJA</span>
+                <a href="/HTML/Categorias/construccion.html" class="ver-todos"><br>
+                    <s>$14,559.12</s>
+                </a>
+            </div>
+        </div>
+        <div class="cards">
+            <div class="vendido">Ofertas Hot</div>
+            <a href="HTML/Categorias/construccion.html"><img class="img-cards" src="images/productos/ofertas/-7.jpg"
+                    alt="">
+                <div class="precio"><small>$28,200.00</small></div>
+            </a>
+            <div class="detalles">
+                <span class="nombre">TUBO RECTANGULAR 2 X 1 0.80mm Calibre 21 X 6 MT</span>
+                <a href="/HTML/Categorias/construccion.html" class="ver-todos"><br>
+                    <s>$30,047.26</s>
+                </a>
+            </div>
+        </div>
+        <div class="cards">
+            <div class="vendido">Ofertas Hot</div>
+            <a href="HTML/Categorias/construccion.html"><img class="img-cards" src="images/productos/ofertas/-8.jpg"
+                    alt="">
+                <div class="precio"><small>$28,900.00</small></div>
+            </a>
+            <div class="detalles">
+                <span class="nombre">Varilla Corrugada 1/2" X 6Mts</span>
+                <a href="/HTML/Categorias/construccion.html" class="ver-todos"><br>
+                    <s>$29,095.22</s>
+                </a>
+            </div>
+        </div>
+        <div class="cards">
+            <div class="vendido">Ofertas Hot</div>
+            <a href="HTML/Categorias/construccion.html"><img class="img-cards" src="images/Productos/Taladro-4.webp"
+                    alt="">
+                <div class="precio"><small>$159,900.00</small></div>
+            </a>
+            <div class="detalles">
+                <span class="nombre">Taladro Black+Decker</span>
+                <a href="/HTML/Categorias/construccion.html" class="ver-todos">
+                    <small>$235.900</small>
+                </a>
+            </div>
+        </div>
+        <div class="cards">
+            <div class="vendido">Ofertas Hot</div>
+            <a href="HTML/Categorias/construccion.html"><img class="img-cards" src="images/productos/ofertas/-8.jpg"
+                    alt="">
+                <div class="precio"><small>$16,500.00</small></div>
+            </a>
+            <div class="detalles">
+                <span class="nombre">Varilla Corrugada 3/8" X 6M</span>
+                <a href="/HTML/Categorias/construccion.html" class="ver-todos"><br>
+                    <s>$16,655.10</s>
+                </a>
+            </div>
+        </div>
+        <div class="cards">
+            <div class="vendido">Ofertas Hot</div>
+            <a href="HTML/Categorias/construccion.html"><img class="img-cards" src="images/productos/ofertas/-9.png"
+                    alt="">
+                <div class="precio"><small>$49,900.00</small></div>
+            </a>
+            <div class="detalles">
+                <span class="nombre">VINILICO BLANCO 1 GL</span>
+                <a href="/HTML/Categorias/construccion.html" class="ver-todos"><br>
+                    <s>$52,836.00</s>
+                </a>
+            </div>
+        </div>
+
+    </div>
+
+
+
+
+
+
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-1">
+                    <h3>Quiénes somos</h3>
+                    <p>Byte Hunters es una empresa colombiana de desarrollo de software ubicada en La Plata, Huila.
+                        Cuentan con un equipo de profesionales expertos en Java, MySQL, HTML, CSS y JavaScript.
+                        Desarrollaron la solución FYLEC específicamente para el sector de ferreterías, enfocada en la
+                        creación de tiendas online con catálogo de productos, ventas y reportes. Ofrecen el software
+                        bajo licenciamiento temporal, incluyendo servicios de soporte técnico, capacitaciones y
+                        actualizaciones. Buscan ser socios tecnológicos para impulsar la transformación digital de las
+                        ferreterías de la región.</p>
+                </div>
+                <hr>
+                <ul>
+                    <li>Byte Hunters SAS</li>
+                    <li>NIT: 123456789</li>
+                    <li>Dirección: La Plata Huila</li>
+                    <li>Teléfono: 3186004016</li>
+                    <li>Correo electrónico: Bytehunters@gmail.com</li>
+                </ul>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-4">
+
+                <p class="text-center">© 2023 Byte Hunters SAS. Todos los derechos reservados.</p>
+            </div>
+        </div>
+        <a href="https://www.facebook.com/?locale=es_LA"><i class="fab fa-facebook" target="_blank"></i></a>
+        <a href="https://twitter.com/?lang=es"><i class="fab fa-twitter" target="_blank"></i></a>
+        <a href="https://co.pinterest.com"><i class="fa-brands fa-instagram"></i></a>
+        </div>
+    </footer>
+    <a id="btn-fixed" href="https://web.whatsapp.com" target="_blank"><i class="fab fa-whatsapp"></i></a>
+
+<script src="JS/main.js"></script>
+</body>
+
+</html>

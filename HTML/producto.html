@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='../CSS/menu_principal.css'>
+    <script src="https://kit.fontawesome.com/a53360878e.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <header class="header-principal">
+        <a href="../index.html"><img class="logo" src="../images/FYLEC-blanco.png" alt="Logo"></a>
+
+        <ul class="menu" id="menu">
+            <div class="buscador2">
+                <input type="search" placeholder="Busca un producto">
+                <button type="submit">Buscar</i></button>
+            </div>
+            <!-- <div class="dropdown">
+                <span><a><i class="fa-solid fa-list"></i></a></span>
+                <div class="dropdown-content">
+                    
+                    <a href="#">Categoría 1</a>
+                    <a href="#">Categoría 2</a>
+                    <a href="#">Categoría 3</a>
+                    <a href="#">Categoría 4</a>
+                    <a href="#">Categoría 5</a>
+                    <a href="#">Categoría 6</a>
+                    <a href="#">Categoría 7</a>
+                    <a href="#">Categoría 8</a>
+                </div>
+            </div> -->
+            <li><a href=""><i class="fa-solid fa-tags"></i> </a></li>
+            <li><a href="#" onclick="mostrarLogin()"><i class="fa-solid fa-user"></i> </a></li>
+            <li><a href="#"><i class="fa-solid fa-bag-shopping"></i> </a></li>
+        </ul>
+    </header>
+    <main class="main-prod">
+        <h1>Productos</h1>
+        <div class="contenedor-prod">
+            <div class="image-prod">
+                <div class="img-1"><img src="../images/productos/pistola-8.jpg" alt=""></div>
+                <div class="img-min">
+                    <div class="img-2"><img src="../images/productos/pistola-8.jpg" alt=""></div>
+                    <div class="img-3"><img src="../images/productos/pistola-8.jpg" alt=""></div>
+                    <div class="img-4"><img src="../images/productos/pistola-8.jpg" alt=""></div>
+                </div>
+            </div>
+            <div class="descripcion-prod">
+                <h2>PISTOLA WAGNER <br> PULVERIZADOR</h2>
+                <h3>Marca: WAGNER</h3>
+                <h3>Código del producto <small>2190911</small></h3>
+                <h3>Descripcion del Producto</h3>
+                <h3>PISTOLA WAGNER PULVERIZADOR</h3>
+                <small>$288,322.20</small>
+
+                <form id="formularioEnvio" class="envio">
+                    <input type="radio" name="opcionEnvio" id="recoger" class="original" value="recoger">
+                    <label for="recoger">Recoger en la tienda</label>
+
+                    <input type="radio" name="opcionEnvio" id="enviar" class="original" value="enviar">
+                    <label for="enviar">Enviar a tu dirección</label>
+                </form>
+                <form class="cantidad">
+                    <label for="cantidad">Cantidad:</label>
+                    <button type="button" onclick="decrementarCantidad()">-</button>
+                    <input type="text" id="cantidad" value="1" readonly>
+                    <button type="button" onclick="incrementarCantidad()">+</button>
+                </form>
+                <div class="comprar">
+                    <button type="button" onclick="comprar()" class="btn-comp">Comprar</button>
+                    <button type="button" onclick="agregarAlCarrito()" class="btn-comp">Añadir al Carrito</button>
+                </div>
+                <div id="modalCompra" class="modal">
+                    <div class="modal-content">
+                        <span class="close" onclick="cerrarModalCompra()">&times;</span>
+                        <p>¡Estas a un paso de completar tu compra!</p>
+                        <p>Por favor, ingresa tus detalles para completar la compra:</p>
+                        <form>
+                            <label for="nombreCompra">Nombre:</label><br>
+                            <input type="text" id="nombreCompra" required><br>
+                            <label for="direccionCompra">Dirección:</label><br>
+                            <input type="text" id="direccionCompra" required><br>
+                            <label for="telefonoCompra">Teléfono:</label><br>
+                            <input type="text" id="telefonoCompra" required><br>
+                            <button type="button" onclick="finalizarCompra()">Finalizar Compra</button>
+                        </form>
+                    </div>
+                </div>
+
+                <div id="mensajeCarrito" class="modal oculto">
+                    <div class="modal-content">
+                        <span class="close" onclick="cerrarModalCarrito()">&times;</span>
+                        <p>Producto añadido al carrito.</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <h2>Caracteristicas</h2>
+        <div class="caracteristicas-prod">
+            <p>Tecnología Alemana para, con boquilla ajustable a tres posiciones horizontal, vertical y diagonal.</p>
+            <p>Producto de La LÍNEA HOGAR. Ideal para aplicaciones de vinilos, esmaltes (disueltos con varsol), inmunizantes, impermeabilizantes y desinfectantes.</p>
+            <p>Equipo Versátil, Fácil y Práctico al momento de Usar y Transportar.</p>
+            <p>Precio válido sólo para la ciudad de Bogotá.</p>
+            <p>La foto de este producto es adaptada y ambientada por lo tanto no incluye ningún elemento o pieza adicional, el diseño y color presentado en la foto es una aproximación al real.</p>
+        </div>
+
+    </main>
+    <footer>
+        <div class="container6">
+            <div class="row">
+                <div class="col-md-1">
+                    <h3>Quiénes somos</h3>
+                    <p>Byte Hunters es una empresa colombiana de desarrollo de software ubicada en La Plata, Huila.
+                        Cuentan con un equipo de profesionales expertos en Java, MySQL, HTML, CSS y JavaScript.
+                        Desarrollaron la solución FYLEC específicamente para el sector de ferreterías, enfocada en la
+                        creación de tiendas online con catálogo de productos, ventas y reportes. Ofrecen el software
+                        bajo licenciamiento temporal, incluyendo servicios de soporte técnico, capacitaciones y
+                        actualizaciones. Buscan ser socios tecnológicos para impulsar la transformación digital de las
+                        ferreterías de la región.</p>
+                </div>
+                <hr>
+                <ul>
+                    <li>Byte Hunters SAS</li>
+                    <li>NIT: 123456789</li>
+                    <li>Dirección: La Plata Huila</li>
+                    <li>Teléfono: 3186004016</li>
+                    <li>Correo electrónico: Bytehunters@gmail.com</li>
+                </ul>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-4">
+
+                <p class="text-center">© 2023 Byte Hunters SAS. Todos los derechos reservados.</p>
+            </div>
+        </div>
+        <a href="https://www.facebook.com/?locale=es_LA"><i class="fab fa-facebook" target="_blank"></i></a>
+        <a href="https://twitter.com/?lang=es"><i class="fab fa-twitter" target="_blank"></i></a>
+        <a href="https://co.pinterest.com"><i class="fa-brands fa-instagram"></i></a>
+        </div>
+    </footer>
+    <a id="btn-fixed" href="https://web.whatsapp.com" target="_blank"><i class="fab fa-whatsapp"></i></a>
+    <script src='../JS/main.js'></script>
+
+</body>
+
+
+</html>

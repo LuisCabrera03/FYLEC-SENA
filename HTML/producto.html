@@ -5,6 +5,7 @@
     <meta charset='utf-8'>
     <meta http-equiv='X-UA-Compatible' content='IE=edge'>
     <title>Page Title</title>
+    <link rel="shortcut icon" href="../images/favicon-16x16.png" type="image/x-icon">
     <meta name='viewport' content='width=device-width, initial-scale=1'>
     <link rel='stylesheet' type='text/css' media='screen' href='../CSS/menu_principal.css'>
     <script src="https://kit.fontawesome.com/a53360878e.js" crossorigin="anonymous"></script>
@@ -33,11 +34,40 @@
                     <a href="#">Categoría 8</a>
                 </div>
             </div> -->
-            <li><a href=""><i class="fa-solid fa-tags"></i> </a></li>
-            <li><a href="#" onclick="mostrarLogin()"><i class="fa-solid fa-user"></i> </a></li>
-            <li><a href="#"><i class="fa-solid fa-bag-shopping"></i> </a></li>
+            <li><a href="HTML/ofertas.html"><i class="fa-solid fa-tags"></i> </a><span>Ofertas</span></li>
+            <li><a href="#" onclick="mostrarLogin()"><i class="fa-solid fa-user"></i> </a><span>Cuenta</span></li>
+            <li><a href="#" onclick="mostrarCarrito()" class="btn-carrito"><i
+                class="fa-solid fa-bag-shopping"></i></a><span>Mi carrito</span></li>
         </ul>
     </header>
+        <!-- Carrito de compras -->
+        <div class="carrito-contenedor" id="carritoContenedor">
+            <h2 class="carrito-titulo">Carrito de Compras</h2>
+            <div class="producto">
+                <img src="../images/productos/-11.jpg" alt="Producto 1">
+                <div class="producto-detalles">
+                    <p>Nombre del Producto 1</p>
+                    <p>Precio: $20.00</p>
+                </div>
+                <input type="number" class="producto-cantidad" value="1" min="1">
+                <div class="producto-acciones">
+                    <button onclick="eliminarProducto(1)">Eliminar</button>
+                </div>
+            </div>
+            <div class="producto">
+                <img src="../images/productos/aspiradora-7.webp" alt="Producto 2">
+                <div class="producto-detalles">
+                    <p>Nombre del Producto 2</p>
+                    <p>Precio: $30.00</p>
+                </div>
+                <input type="number" class="producto-cantidad" value="2" min="1">
+                <div class="producto-acciones">
+                    <button onclick="eliminarProducto(2)">Eliminar</button>
+                </div>
+            </div>
+        </div>
+
+
     <main class="main-prod">
         <h1>Productos</h1>
         <div class="contenedor-prod">

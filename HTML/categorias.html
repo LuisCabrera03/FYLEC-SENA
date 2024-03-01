@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>categoria construccion</title>
+    <link rel="shortcut icon" href="../images/favicon-16x16.png" type="image/x-icon">
     <link rel="stylesheet" href="../CSS/menu_principal.css">
     <script src="https://kit.fontawesome.com/a53360878e.js" crossorigin="anonymous"></script>
 
@@ -13,7 +14,7 @@
 <body>
     <header class="header-principal" id="header-principal">
         <a href="../index.html"><img class="logo" src="../images/FYLEC-blanco.png" alt="Logo"></a>
-            
+
         <ul class="menu" id="menu">
             <div class="buscador2">
                 <input type="search" placeholder="Busca un producto">
@@ -22,7 +23,7 @@
             <div class="dropdown">
                 <a><i class="fa-solid fa-list"></i></a>
                 <div class="dropdown-content">
-                    
+
                     <a href="#">Categoría 1</a>
                     <a href="#">Categoría 2</a>
                     <a href="#">Categoría 3</a>
@@ -35,17 +36,41 @@
             </div>
             <li><a href="ofertas.html"><i class="fa-solid fa-tags"></i> </a><span>Ofertas</span></li>
             <li><a href="#" onclick="mostrarLogin()"><i class="fa-solid fa-user"></i> </a><span>Cuenta</span></li>
-            <li><a href="#"><i class="fa-solid fa-bag-shopping"></i></a><span>Mi carrito</span></li>
-
-            
-
+            <li><a href="#" onclick="mostrarCarrito()" class="btn-carrito"><i
+                        class="fa-solid fa-bag-shopping"></i></a><span>Mi carrito</span></li>
         </ul>
     </header>
+    <!-- Carrito de compras -->
+    <div class="carrito-contenedor" id="carritoContenedor">
+        <h2 class="carrito-titulo">Carrito de Compras</h2>
+        <div class="producto">
+            <img src="../images/productos/-11.jpg" alt="Producto 1">
+            <div class="producto-detalles">
+                <p>Nombre del Producto 1</p>
+                <p>Precio: $20.00</p>
+            </div>
+            <input type="number" class="producto-cantidad" value="1" min="1">
+            <div class="producto-acciones">
+                <button onclick="eliminarProducto(1)">Eliminar</button>
+            </div>
+        </div>
+        <div class="producto">
+            <img src="../images/productos/aspiradora-7.webp" alt="Producto 2">
+            <div class="producto-detalles">
+                <p>Nombre del Producto 2</p>
+                <p>Precio: $30.00</p>
+            </div>
+            <input type="number" class="producto-cantidad" value="2" min="1">
+            <div class="producto-acciones">
+                <button onclick="eliminarProducto(2)">Eliminar</button>
+            </div>
+        </div>
+    </div>
+    <!-- productos -->
     <div class="container-cartas2">
         <div class="cards">
-            
-            <a href="../HTML/producto.html"><img class="img-cards"
-                    src="../images/categorias/Productos/aspiradora.webp" alt=""></a>
+
+            <a href="../HTML/producto.html"><img class="img-cards" src="../images/productos/-08.jpeg" alt=""></a>
             <div class="detalles">
                 <span class="nombre">Taladro Black+Decker</span>
                 <a href="../HTML/producto.html" class="ver-todos">
@@ -54,8 +79,7 @@
             </div>
         </div>
         <div class="cards">
-            <a href="../HTML/producto.html"><img class="img-cards"
-                    src="../images/categorias/Productos/aspiradora.webp" alt=""></a>
+            <a href="../HTML/producto.html"><img class="img-cards" src="../images/productos/-21.jpg" alt=""></a>
             <div class="detalles">
                 <span class="nombre">Taladro Black+Decker</span>
                 <a href="../HTML/producto.html" class="ver-todos">
@@ -64,8 +88,7 @@
             </div>
         </div>
         <div class="cards">
-            <a href="../HTML/producto.html"><img class="img-cards"
-                    src="../images/categorias/Productos/aspiradora.webp" alt=""></a>
+            <a href="../HTML/producto.html"><img class="img-cards" src="../images/productos/argos-1.webp" alt=""></a>
             <div class="detalles">
                 <span class="nombre">Taladro Black+Decker</span>
                 <a href="../HTML/producto.html" class="ver-todos">
@@ -74,8 +97,7 @@
             </div>
         </div>
         <div class="cards">
-            <a href="../HTML/producto.html"><img class="img-cards"
-                    src="../images/categorias/Productos/aspiradora.webp" alt=""></a>
+            <a href="../HTML/producto.html"><img class="img-cards" src="../images/productos/-20.jpg" alt=""></a>
             <div class="detalles">
                 <span class="nombre">Taladro Black+Decker</span>
                 <a href="../HTML/producto.html" class="ver-todos">
@@ -84,39 +106,7 @@
             </div>
         </div>
         <div class="cards">
-            <a href="../HTML/producto.html"><img class="img-cards"
-                    src="../images/categorias/Productos/aspiradora.webp" alt=""></a>
-            <div class="detalles">
-                <span class="nombre">Taladro Black+Decker</span>
-                <a href="../HTML/producto.html" class="ver-todos">
-                    <small>$235.900</small>
-                </a>
-            </div>
-        </div>
-        <div class="cards">
-            <div class="vendido">Mas vendidos</div>
-            <a href="../HTML/producto.html"><img class="img-cards"
-                    src="../images/categorias/Productos/tronzadora.webp" alt=""></a>
-            <div class="detalles">
-                <span class="nombre">Taladro Black+Decker</span>
-                <a href="../HTML/producto.html" class="ver-todos">
-                    <small>$235.900</small>
-                </a>
-            </div>
-        </div>
-        <div class="cards">
-            <a href="../HTML/producto.html"><img class="img-cards"
-                    src="../images/categorias/Productos/tronzadora.webp" alt=""></a>
-            <div class="detalles">
-                <span class="nombre">Taladro Black+Decker</span>
-                <a href="../HTML/producto.html" class="ver-todos">
-                    <small>$235.900</small>
-                </a>
-            </div>
-        </div>
-        <div class="cards">
-            <a href="../HTML/producto.html"><img class="img-cards"
-                    src="../images/categorias/Productos/tronzadora.webp" alt=""></a>
+            <a href="../HTML/producto.html"><img class="img-cards" src="../images/productos/-08.jpeg" alt=""></a>
             <div class="detalles">
                 <span class="nombre">Taladro Black+Decker</span>
                 <a href="../HTML/producto.html" class="ver-todos">
@@ -126,8 +116,25 @@
         </div>
         <div class="cards">
             <div class="vendido">Mas vendidos</div>
-            <a href="../HTML/producto.html"><img class="img-cards"
-                    src="../images/categorias/Productos/tronzadora.webp" alt=""></a>
+            <a href="../HTML/producto.html"><img class="img-cards" src="../images/productos/-18.png" alt=""></a>
+            <div class="detalles">
+                <span class="nombre">Taladro Black+Decker</span>
+                <a href="../HTML/producto.html" class="ver-todos">
+                    <small>$235.900</small>
+                </a>
+            </div>
+        </div>
+        <div class="cards">
+            <a href="../HTML/producto.html"><img class="img-cards" src="../images/productos/-21.jpg" alt=""></a>
+            <div class="detalles">
+                <span class="nombre">Taladro Black+Decker</span>
+                <a href="../HTML/producto.html" class="ver-todos">
+                    <small>$235.900</small>
+                </a>
+            </div>
+        </div>
+        <div class="cards">
+            <a href="../HTML/producto.html"><img class="img-cards" src="../images/productos/-12.png" alt=""></a>
             <div class="detalles">
                 <span class="nombre">Taladro Black+Decker</span>
                 <a href="../HTML/producto.html" class="ver-todos">
@@ -137,8 +144,7 @@
         </div>
         <div class="cards">
             <div class="vendido">Mas vendidos</div>
-            <a href="../HTML/producto.html"><img class="img-cards"
-                    src="../images/categorias/Productos/tronzadora.webp" alt=""></a>
+            <a href="../HTML/producto.html"><img class="img-cards" src="../images/productos/pistola-8.jpg" alt=""></a>
             <div class="detalles">
                 <span class="nombre">Taladro Black+Decker</span>
                 <a href="../HTML/producto.html" class="ver-todos">
@@ -148,18 +154,7 @@
         </div>
         <div class="cards">
             <div class="vendido">Mas vendidos</div>
-            <a href="../HTML/producto.html"><img class="img-cards"
-                    src="../images/categorias/Productos/tronzadora.webp" alt=""></a>
-            <div class="detalles">
-                <span class="nombre">Taladro Black+Decker</span>
-                <a href="../HTML/producto.html" class="ver-todos">
-                    <small>$235.900</small>
-                </a>
-            </div>
-        </div>
-        <div class="cards">
-            <a href="../HTML/producto.html"><img class="img-cards"
-                    src="../images/categorias/Productos/Taladro.webp" alt=""></a>
+            <a href="../HTML/producto.html"><img class="img-cards" src="../images/productos/-14.jpg" alt=""></a>
             <div class="detalles">
                 <span class="nombre">Taladro Black+Decker</span>
                 <a href="../HTML/producto.html" class="ver-todos">
@@ -169,8 +164,16 @@
         </div>
         <div class="cards">
             <div class="vendido">Mas vendidos</div>
-            <a href="../HTML/producto.html"><img class="img-cards"
-                    src="../images/categorias/Productos/Taladro.webp" alt=""></a>
+            <a href="../HTML/producto.html"><img class="img-cards" src="../images/productos/-21.jpg" alt=""></a>
+            <div class="detalles">
+                <span class="nombre">Taladro Black+Decker</span>
+                <a href="../HTML/producto.html" class="ver-todos">
+                    <small>$235.900</small>
+                </a>
+            </div>
+        </div>
+        <div class="cards">
+            <a href="../HTML/producto.html"><img class="img-cards" src="../images/productos/-12.png" alt=""></a>
             <div class="detalles">
                 <span class="nombre">Taladro Black+Decker</span>
                 <a href="../HTML/producto.html" class="ver-todos">
@@ -180,18 +183,7 @@
         </div>
         <div class="cards">
             <div class="vendido">Mas vendidos</div>
-            <a href="../HTML/producto.html"><img class="img-cards"
-                    src="../images/categorias/Productos/Taladro.webp" alt=""></a>
-            <div class="detalles">
-                <span class="nombre">Taladro Black+Decker</span>
-                <a href="../HTML/producto.html" class="ver-todos">
-                    <small>$235.900</small>
-                </a>
-            </div>
-        </div>
-        <div class="cards">
-            <a href="../HTML/producto.html"><img class="img-cards"
-                    src="../images/categorias/Productos/Taladro.webp" alt=""></a>
+            <a href="../HTML/producto.html"><img class="img-cards" src="../images/productos/-11.jpg" alt=""></a>
             <div class="detalles">
                 <span class="nombre">Taladro Black+Decker</span>
                 <a href="../HTML/producto.html" class="ver-todos">
@@ -201,8 +193,7 @@
         </div>
         <div class="cards">
             <div class="vendido">Mas vendidos</div>
-            <a href="../HTML/producto.html"><img class="img-cards"
-                    src="../images/categorias/Productos/Taladro.webp" alt=""></a>
+            <a href="../HTML/producto.html"><img class="img-cards" src="../images/productos/-11.jpg" alt=""></a>
             <div class="detalles">
                 <span class="nombre">Taladro Black+Decker</span>
                 <a href="../HTML/producto.html" class="ver-todos">
@@ -211,8 +202,7 @@
             </div>
         </div>
         <div class="cards">
-            <a href="../HTML/producto.html"><img class="img-cards"
-                    src="../images/categorias/Productos/Taladro.webp" alt=""></a>
+            <a href="../HTML/producto.html"><img class="img-cards" src="../images/productos/-11.jpg" alt=""></a>
             <div class="detalles">
                 <span class="nombre">Taladro Black+Decker</span>
                 <a href="../HTML/producto.html" class="ver-todos">
@@ -221,8 +211,26 @@
             </div>
         </div>
         <div class="cards">
-            <a href="../HTML/producto.html"><img class="img-cards"
-                    src="../images/categorias/Productos/tronzadora.webp" alt=""></a>
+            <div class="vendido">Mas vendidos</div>
+            <a href="../HTML/producto.html"><img class="img-cards" src="../images/productos/-11.jpg" alt=""></a>
+            <div class="detalles">
+                <span class="nombre">Taladro Black+Decker</span>
+                <a href="../HTML/producto.html" class="ver-todos">
+                    <small>$235.900</small>
+                </a>
+            </div>
+        </div>
+        <div class="cards">
+            <a href="../HTML/producto.html"><img class="img-cards" src="../images/productos/-11.jpg" alt=""></a>
+            <div class="detalles">
+                <span class="nombre">Taladro Black+Decker</span>
+                <a href="../HTML/producto.html" class="ver-todos">
+                    <small>$235.900</small>
+                </a>
+            </div>
+        </div>
+        <div class="cards">
+            <a href="../HTML/producto.html"><img class="img-cards" src="../images/productos/argos-1.webp" alt=""></a>
             <div class="detalles">
                 <span class="nombre">Taladro Black+Decker</span>
                 <a href="../HTML/producto.html" class="ver-todos">

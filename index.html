@@ -4,6 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <title>Menu Principal FYLEC</title>
+    <link rel="shortcut icon" href="images/favicon-16x16.png" type="image/x-icon">
+
     <link rel="stylesheet" href="CSS/menu_principal.css">
     <meta name="viewport" content="width=device-width, initial-scale=1 ,user-scalable=no">
     <script src="https://kit.fontawesome.com/a53360878e.js" crossorigin="anonymous"></script>
@@ -15,14 +17,14 @@
         <a href="index.html"><img class="logo" src="images/FYLEC-blanco.png" alt="Logo"></a>
         <ul class="menu">
             <li><a href="HTML/ofertas.html"><i class="fa-solid fa-tags"></i> </a><span>Ofertas</span></li>
-            <li><a href="#" onclick="mostrarLogin()"><i class="fa-solid fa-user"></i> </a><span>Cuenta</span></li>
+            <li><a href="#" onclick="mostrarLogin()"><i class="fa-solid fa-user"></i> </a><span>Cerrar</span></li>
             <li><a href="#" onclick="mostrarCarrito()" class="btn-carrito"><i
                         class="fa-solid fa-bag-shopping"></i></a><span>Mi carrito</span></li>
         </ul>
         <i class="fa-solid fa-bars-staggered" onclick="toggleMenu()"></i>
         <div class="menu-oculto" id="menu">
             <ul>
-                <li><a href="HTML/ofertas.html"><i class="fa-solid fa-tags"></i> </a><span>Ofertas</span></li>
+            <li><a href="HTML/ofertas.html"><i class="fa-solid fa-tags"></i> </a><span>Ofertas</span></li>
             <li><a href="#" onclick="mostrarLogin()"><i class="fa-solid fa-user"></i> </a><span>Cuenta</span></li>
             <li><a href="#" onclick="mostrarCarrito()" class="btn-carrito"><i
                 class="fa-solid fa-bag-shopping"></i></a><span>Mi carrito</span></li>
@@ -82,6 +84,7 @@
                 <button onclick="eliminarProducto(1)">Eliminar</button>
             </div>
         </div>
+
         <div class="producto">
             <img src="images/productos/aspiradora-7.webp" alt="Producto 2">
             <div class="producto-detalles">
@@ -93,10 +96,9 @@
                 <button onclick="eliminarProducto(2)">Eliminar</button>
             </div>
         </div>
-        <!-- Agrega más productos según sea necesario -->
 
     </div>
-
+<!-- slider ---------------------------------------- -->
     <div class="container-slider">
         <div class="slider">
             <div class="buscador">
@@ -160,188 +162,187 @@
             </div>
             <div class="cards">
                 <div class="vendido">Mas vendidos</div>
-                <a href="HTML/Categorias/construccion.html"><img class="img-cards" src="images/productos/-08.jpeg"
+                <a href="HTML/producto.html"><img class="img-cards" src="images/productos/-08.jpeg"
                         alt=""></a>
                 <div class="detalles">
                     <span class="nombre">Koraza Blanco</span>
-                    <a href="/HTML/Categorias/construccion.html" class="ver-todos"><br>
+                    <a href="HTML/producto.html" class="ver-todos"><br>
                         <small>$112,900.00</small>
                     </a>
                 </div>
             </div>
             <div class="cards">
                 <div class="vendido">Mas vendidos</div>
-                <a href="HTML/Categorias/construccion.html"><img class="img-cards" src="images/productos/-09.jpeg"
+                <a href="HTML/producto.html"><img class="img-cards" src="images/productos/-09.jpeg"
                         alt=""></a>
                 <div class="detalles">
                     <span class="nombre">CEMENTO HOLCIM 42.5 KG</span>
-                    <a href="/HTML/Categorias/construccion.html" class="ver-todos"><br>
-                        <s>$26,100.00</s>
+                    <a href="HTML/producto.html" class="ver-todos"><br>
                         <small>$25,400.00</small>
                     </a>
                 </div>
             </div>
             <div class="cards">
                 <div class="vendido">Mas vendidos</div>
-                <a href="HTML/Categorias/construccion.html"><img class="img-cards" src="images/productos/-10.jpg"
+                <a href="HTML/producto.html"><img class="img-cards" src="images/productos/-10.jpg"
                         alt=""></a>
                 <div class="detalles">
                     <span class="nombre">TEJA TIPO S COLONIAL</span>
-                    <a href="/HTML/Categorias/construccion.html" class="ver-todos"><br>
+                    <a href="HTML/producto.html" class="ver-todos"><br>
                         <small>$2,950.00</small>
                     </a>
                 </div>
             </div>
             <div class="cards">
                 <div class="vendido">Mas vendidos</div>
-                <a href="HTML/Categorias/construccion.html"><img class="img-cards" src="images/productos/-11.jpg"
+                <a href="HTML/producto.html"><img class="img-cards" src="images/productos/-11.jpg"
                         alt=""></a>
                 <div class="detalles">
                     <span class="nombre">CAMPANA KALA 76 V3 INOXIDABLE</span>
-                    <a href="/HTML/Categorias/construccion.html" class="ver-todos"><br>
+                    <a href="HTML/producto.html" class="ver-todos"><br>
                         <small>$549,900.00</small>
                     </a>
                 </div>
             </div>
             <div class="cards">
                 <div class="vendido">Mas vendidos</div>
-                <a href="HTML/Categorias/construccion.html"><img class="img-cards" src="images/productos/Taladro-4.webp"
+                <a href="HTML/producto.html"><img class="img-cards" src="images/productos/Taladro-4.webp"
                         alt=""></a>
                 <div class="detalles">
                     <span class="nombre">Taladro Black+Decker</span>
-                    <a href="/HTML/Categorias/construccion.html" class="ver-todos"><br>
+                    <a href="HTML/producto.html" class="ver-todos"><br>
                         <small>$235.900</small>
                     </a>
                 </div>
             </div>
             <div class="cards">
                 <div class="vendido">Mas vendidos</div>
-                <a href="HTML/Categorias/construccion.html"><img class="img-cards" src="images/productos/-12.png"
+                <a href="HTML/producto.html"><img class="img-cards" src="images/productos/-12.png"
                         alt=""></a>
                 <div class="detalles">
                     <span class="nombre">Camara Domo 2MP Lente 3.6</span>
-                    <a href="/HTML/Categorias/construccion.html" class="ver-todos"><br>
+                    <a href="HTML/producto.html" class="ver-todos"><br>
                         <small>$60,170.00</small>
                     </a>
                 </div>
             </div>
             <div class="cards">
                 <div class="vendido">Mas vendidos</div>
-                <a href="HTML/Categorias/construccion.html"><img class="img-cards" src="images/productos/-13.jpg"
+                <a href="HTML/producto.html"><img class="img-cards" src="images/productos/-13.jpg"
                         alt=""></a>
                 <div class="detalles">
                     <span class="nombre">Exprimidor De Jugos 1 Litro</span>
-                    <a href="/HTML/Categorias/construccion.html" class="ver-todos"><br>
+                    <a href="HTML/producto.html" class="ver-todos"><br>
                         <small>$56,048.93</small>
                     </a>
                 </div>
             </div>
             <div class="cards">
                 <div class="vendido">Mas vendidos</div>
-                <a href="HTML/Categorias/construccion.html"><img class="img-cards" src="images/productos/-14.jpg"
+                <a href="HTML/producto.html"><img class="img-cards" src="images/productos/-14.jpg"
                         alt=""></a>
                 <div class="detalles">
                     <span class="nombre">ANGULO (3/4 X 1/8) 19 MM X 2.5 MM</span>
-                    <a href="/HTML/Categorias/construccion.html" class="ver-todos"><br>
+                    <a href="HTML/producto.html" class="ver-todos"><br>
                         <small>$235.900</small>
                     </a>
                 </div>
             </div>
             <div class="cards">
                 <div class="vendido">Mas vendidos</div>
-                <a href="HTML/Categorias/construccion.html"><img class="img-cards" src="images/productos/-15.jpg"
+                <a href="HTML/producto.html"><img class="img-cards" src="images/productos/-15.jpg"
                         alt=""></a>
                 <div class="detalles">
                     <span class="nombre">UTP Cat 5E Exterior Aleacion Rollo 305Mts</span>
-                    <a href="/HTML/Categorias/construccion.html" class="ver-todos"><br>
+                    <a href="HTML/producto.html" class="ver-todos"><br>
                         <small>$168,400.00</small>
                     </a>
                 </div>
             </div>
             <div class="cards">
                 <div class="vendido">Mas vendidos</div>
-                <a href="HTML/Categorias/construccion.html"><img class="img-cards" src="images/productos/-16.jpg"
+                <a href="HTML/producto.html"><img class="img-cards" src="images/productos/-16.jpg"
                         alt=""></a>
                 <div class="detalles">
                     <span class="nombre">TANQUE PLÁSTICO NEGRO 1000 LTS</span>
-                    <a href="/HTML/Categorias/construccion.html" class="ver-todos"><br>
+                    <a href="HTML/producto.html" class="ver-todos"><br>
                         <small>$394,680.00</small>
                     </a>
                 </div>
             </div>
             <div class="cards">
                 <div class="vendido">Mas vendidos</div>
-                <a href="HTML/Categorias/construccion.html"><img class="img-cards" src="images/productos/Taladro-4.webp"
+                <a href="HTML/producto.html"><img class="img-cards" src="images/productos/Taladro-4.webp"
                         alt=""></a>
                 <div class="detalles">
                     <span class="nombre">Taladro Black+Decker</span>
-                    <a href="/HTML/Categorias/construccion.html" class="ver-todos"><br>
+                    <a href="HTML/producto.html" class="ver-todos"><br>
                         <small>$235.900</small>
                     </a>
                 </div>
             </div>
             <div class="cards">
                 <div class="vendido">Mas vendidos</div>
-                <a href="HTML/Categorias/construccion.html"><img class="img-cards" src="images/productos/-17.jpg"
+                <a href="HTML/producto.html"><img class="img-cards" src="images/productos/-17.jpg"
                         alt=""></a>
                 <div class="detalles">
                     <span class="nombre">BOQUILLA BICOLOR BLANCO 2 KG</span>
-                    <a href="/HTML/Categorias/construccion.html" class="ver-todos"><br>
+                    <a href="HTML/producto.html" class="ver-todos"><br>
                         <small>$10,446.80</small>
                     </a>
                 </div>
             </div>
             <div class="cards">
                 <div class="vendido">Mas vendidos</div>
-                <a href="HTML/Categorias/construccion.html"><img class="img-cards" src="images/productos/-18.png"
+                <a href="HTML/producto.html"><img class="img-cards" src="images/productos/-18.png"
                         alt=""></a>
                 <div class="detalles">
                     <span class="nombre">ALICATE HOMBRE SOLO 10 PG 141012</span>
-                    <a href="/HTML/Categorias/construccion.html" class="ver-todos"><br>
+                    <a href="/HTML/producto.html" class="ver-todos"><br>
                         <small>$35,340.00</small>
                     </a>
                 </div>
             </div>
             <div class="cards">
                 <div class="vendido">Mas vendidos</div>
-                <a href="HTML/Categorias/construccion.html"><img class="img-cards" src="images/productos/-19.jpg"
+                <a href="HTML/producto.html"><img class="img-cards" src="images/productos/-19.jpg"
                         alt=""></a>
                 <div class="detalles">
                     <span class="nombre">CARETA SOLDADOR NEGRO FALCON FW440 FURIUS</span>
-                    <a href="/HTML/Categorias/construccion.html" class="ver-todos"><br>
+                    <a href="HTML/producto.html" class="ver-todos"><br>
                         <small>$113,905.00</small>
                     </a>
                 </div>
             </div>
             <div class="cards">
                 <div class="vendido">Mas vendidos</div>
-                <a href="HTML/Categorias/construccion.html"><img class="img-cards" src="images/productos/-20.jpg"
+                <a href="HTML/producto.html"><img class="img-cards" src="images/productos/-20.jpg"
                         alt=""></a>
                 <div class="detalles">
                     <span class="nombre">COMPRESOR 25 LITROS 2.0 HP</span>
-                    <a href="/HTML/Categorias/construccion.html" class="ver-todos"><br>
+                    <a href="HTML/producto.html" class="ver-todos"><br>
                         <small>$664,905.00</small>
                     </a>
                 </div>
             </div>
             <div class="cards">
                 <div class="vendido">Mas vendidos</div>
-                <a href="HTML/Categorias/construccion.html"><img class="img-cards" src="images/productos/-21.jpg"
+                <a href="HTML/producto.html"><img class="img-cards" src="images/productos/-21.jpg"
                         alt=""></a>
                 <div class="detalles">
                     <span class="nombre">HIDROLAVADORA H-4100 1400 W</span>
-                    <a href="/HTML/Categorias/construccion.html" class="ver-todos"><br>
+                    <a href="HTML/producto.html" class="ver-todos"><br>
                         <small>$235.900</small>
                     </a>
                 </div>
             </div>
             <div class="cards">
                 <div class="vendido">Mas vendidos</div>
-                <a href="HTML/Categorias/construccion.html"><img class="img-cards" src="images/productos/Taladro-4.webp"
+                <a href="HTML/producto.html"><img class="img-cards" src="images/productos/Taladro-4.webp"
                         alt=""></a>
                 <div class="detalles">
                     <span class="nombre">Taladro Black+Decker</span>
-                    <a href="/HTML/Categorias/construccion.html" class="ver-todos"><br>
+                    <a href="HTML/producto.html" class="ver-todos"><br>
                         <small>$235.900</small>
                     </a>
                 </div>
@@ -365,131 +366,131 @@
         </div>
         <div class="cards">
             <div class="vendido">Ofertas Hot</div>
-            <a href="HTML/Categorias/construccion.html"><img class="img-cards" src="images/productos/ofertas/-2.png"
+            <a href="HTML/producto.html"><img class="img-cards" src="images/productos/ofertas/-2.png"
                     alt="">
                 <div class="precio"><small>$159,900.00</small></div>
             </a>
             <div class="detalles">
                 <span class="nombre">CABLE ELECTRICO BLANCO #12 ROLLO 100 METROS 19 HILOS ANDES</span>
-                <a href="/HTML/Categorias/construccion.html" class="ver-todos"><br>
+                <a href="HTML/producto.html" class="ver-todos"><br>
                     <s>$168,608.00</s>
                 </a>
             </div>
         </div>
         <div class="cards">
             <div class="vendido">Ofertas Hot</div>
-            <a href="HTML/Categorias/construccion.html"><img class="img-cards" src="images/productos/ofertas/-3.jpg"
+            <a href="HTML/producto.html"><img class="img-cards" src="images/productos/ofertas/-3.jpg"
                     alt="">
                 <div class="precio"><small>$36,800.00</small></div>
             </a>
             <div class="detalles">
                 <span class="nombre">LAMINA DRYWALL 1/2" DE 122 CM X 2.44 CM GYPLAC</span>
-                <a href="/HTML/Categorias/construccion.html" class="ver-todos"><br>
+                <a href="HTML/producto.html" class="ver-todos"><br>
                     <s>$41,800.00</s>
                 </a>
             </div>
         </div>
         <div class="cards">
             <div class="vendido">Ofertas Hot</div>
-            <a href="HTML/Categorias/construccion.html"><img class="img-cards" src="images/productos/ofertas/-4.jpeg"
+            <a href="HTML/producto.html"><img class="img-cards" src="images/productos/ofertas/-4.jpeg"
                     alt="">
                 <div class="precio"><small>$25,400.00</small></div>
             </a>
             <div class="detalles">
                 <span class="nombre">CEMENTO HOLCIM 42.5 KG EXCLUSIVO ONLINE</span>
-                <a href="/HTML/Categorias/construccion.html" class="ver-todos"><br>
+                <a href="HTML/producto.html" class="ver-todos"><br>
                     <s>$26,100.00</s>
                 </a>
             </div>
         </div>
         <div class="cards">
             <div class="vendido">Ofertas Hot</div>
-            <a href="HTML/Categorias/construccion.html"><img class="img-cards" src="images/productos/ofertas/-5.jpeg"
+            <a href="HTML/producto.html"><img class="img-cards" src="images/productos/ofertas/-5.jpeg"
                     alt="">
                 <div class="precio"><small>$604,900.00</small></div>
             </a>
             <div class="detalles">
                 <span class="nombre">METALDECK 2 PG X 12 MT X 0.94 ANCHO UTIL CAL 22 ACESCO</span>
-                <a href="/HTML/Categorias/construccion.html" class="ver-todos"><br>
+                <a href="HTML/producto.html" class="ver-todos"><br>
                     <s>$646,686.66</s>
                 </a>
             </div>
         </div>
         <div class="cards">
             <div class="vendido">Ofertas Hot</div>
-            <a href="HTML/Categorias/construccion.html"><img class="img-cards" src="images/productos/ofertas/-6.png"
+            <a href="HTML/producto.html"><img class="img-cards" src="images/productos/ofertas/-6.png"
                     alt="">
                 <div class="precio"><small>$14,300.00
                     </small></div>
             </a>
             <div class="detalles">
                 <span class="nombre">TABLETA 20 X 20 COLONIAL LISA ROJA</span>
-                <a href="/HTML/Categorias/construccion.html" class="ver-todos"><br>
+                <a href="HTML/producto.html" class="ver-todos"><br>
                     <s>$14,559.12</s>
                 </a>
             </div>
         </div>
         <div class="cards">
             <div class="vendido">Ofertas Hot</div>
-            <a href="HTML/Categorias/construccion.html"><img class="img-cards" src="images/productos/ofertas/-7.jpg"
+            <a href="HTML/producto.html"><img class="img-cards" src="images/productos/ofertas/-7.jpg"
                     alt="">
                 <div class="precio"><small>$28,200.00</small></div>
             </a>
             <div class="detalles">
                 <span class="nombre">TUBO RECTANGULAR 2 X 1 0.80mm Calibre 21 X 6 MT</span>
-                <a href="/HTML/Categorias/construccion.html" class="ver-todos"><br>
+                <a href="HTML/producto.html" class="ver-todos"><br>
                     <s>$30,047.26</s>
                 </a>
             </div>
         </div>
         <div class="cards">
             <div class="vendido">Ofertas Hot</div>
-            <a href="HTML/Categorias/construccion.html"><img class="img-cards" src="images/productos/ofertas/-8.jpg"
+            <a href="HTML/producto.html"><img class="img-cards" src="images/productos/ofertas/-8.jpg"
                     alt="">
                 <div class="precio"><small>$28,900.00</small></div>
             </a>
             <div class="detalles">
                 <span class="nombre">Varilla Corrugada 1/2" X 6Mts</span>
-                <a href="/HTML/Categorias/construccion.html" class="ver-todos"><br>
+                <a href="/HTML/producto.html" class="ver-todos"><br>
                     <s>$29,095.22</s>
                 </a>
             </div>
         </div>
         <div class="cards">
             <div class="vendido">Ofertas Hot</div>
-            <a href="HTML/Categorias/construccion.html"><img class="img-cards" src="images/productos/Taladro-4.webp"
+            <a href="HTML/producto.html"><img class="img-cards" src="images/productos/Taladro-4.webp"
                     alt="">
                 <div class="precio"><small>$159,900.00</small></div>
             </a>
             <div class="detalles">
                 <span class="nombre">Taladro Black+Decker</span>
-                <a href="/HTML/Categorias/construccion.html" class="ver-todos">
+                <a href="HTML/producto.html" class="ver-todos">
                     <small>$235.900</small>
                 </a>
             </div>
         </div>
         <div class="cards">
             <div class="vendido">Ofertas Hot</div>
-            <a href="HTML/Categorias/construccion.html"><img class="img-cards" src="images/productos/ofertas/-8.jpg"
+            <a href="HTML/producto.html"><img class="img-cards" src="images/productos/ofertas/-8.jpg"
                     alt="">
                 <div class="precio"><small>$16,500.00</small></div>
             </a>
             <div class="detalles">
                 <span class="nombre">Varilla Corrugada 3/8" X 6M</span>
-                <a href="/HTML/Categorias/construccion.html" class="ver-todos"><br>
+                <a href="HTML/producto.html" class="ver-todos"><br>
                     <s>$16,655.10</s>
                 </a>
             </div>
         </div>
         <div class="cards">
             <div class="vendido">Ofertas Hot</div>
-            <a href="HTML/Categorias/construccion.html"><img class="img-cards" src="images/productos/ofertas/-9.png"
+            <a href="HTML/producto.html"><img class="img-cards" src="images/productos/ofertas/-9.png"
                     alt="">
                 <div class="precio"><small>$49,900.00</small></div>
             </a>
             <div class="detalles">
                 <span class="nombre">VINILICO BLANCO 1 GL</span>
-                <a href="/HTML/Categorias/construccion.html" class="ver-todos"><br>
+                <a href="HTML/producto.html" class="ver-todos"><br>
                     <s>$52,836.00</s>
                 </a>
             </div>

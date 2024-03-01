@@ -210,7 +210,7 @@ setInterval(changeSlide, 5000);
 
 // seccion de producto -----------------------------------------------------------------------------------
 // seleccionar metodo de envio
-ddocument.addEventListener("DOMContentLoaded", function () {
+document.addEventListener("DOMContentLoaded", function () {
     var opcionesEnvio = document.querySelectorAll('.envio input[type="radio"]');
 
     for (var i = 0; i < opcionesEnvio.length; i++) {
